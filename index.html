@@ -118,7 +118,8 @@
             <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-3/4 sm:w-2/3 content-start sm:pr-10">
                 <div class="w-full sm:p-4 px-4 mb-6">
                     <h1 class="title-font font-medium text-xl mb-2 text-gray-900">2.5+ Year Professional Experience</h1>
-                    <div class="leading-relaxed">i am <span class="text-red-500">Monik Kacha</span> and from the college time working on all kind of
+                    <div class="leading-relaxed">i am <span class="text-red-500">Monik Kacha</span> and from the college
+                        time working on all kind of
                         projects , ranging from simple web app to machine learning and AI Based projects . after
                         completing the college , start working as a professional mobile developer and apart from mobile
                         development have experties in major web development framework and also like to play with UI /
@@ -430,14 +431,23 @@
     <div class="bg-gray-100">
         <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
             <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-               <img src="./images/brand_icon.svg" alt="Flexman">
+                <img src="./images/brand_icon.svg" alt="Flexman">
             </a>
             <p class="text-sm text-gray-700 sm:ml-6 sm:mt-0 mt-4 ml-auto">
                 Well , Let's get on the table and take a decision <span class="text-red-500"> Let's Initiate Chat</span>
             </p>
         </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        //Smooth scrolling with links
+        $('a[href*=\\#]').on('click', function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+        });
+    </script>
 </body>
 
 </html>

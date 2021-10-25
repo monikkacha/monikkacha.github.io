@@ -2,11 +2,13 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     font-family: 'Poppins';
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     cursor: pointer;
 }
@@ -100,6 +102,7 @@ a{
     text-align: center;
     color: blue;
 }
+
 .txt-approve {
     margin: auto;
     margin-left: 16px;
@@ -119,38 +122,40 @@ a{
     margin-right: 20px;
 }
 
-.freelance-card img{
+.freelance-card img {
     width: 160px;
     height: 80px;
     display: block;
 }
 
-.freelance-card span{
+.freelance-card span {
     color: #6f6f6f;
     font-size: 13px;
     display: block;
     margin-bottom: 10px;
 }
 
-.freelance-card a{
+.freelance-card a {
     color: blue;
-    letter-spacing: 1px;   
+    letter-spacing: 1px;
 }
 
-.freelance-card .upwork-img{
+.freelance-card .upwork-img {
     display: block;
     width: 140px;
     height: 80px;
 }
+
 .freelance-stars {
     margin-bottom: 10px;
 }
+
 .freelance-stars i {
     color: gold;
 }
 
-
 /* about me  */
+
 .profile-container {
     margin-top: 200px;
     text-align: center;
@@ -163,14 +168,16 @@ a{
     font-weight: bold;
 }
 
-.profile-container img , .profile-img{
+.profile-container img, .profile-img {
     width: 300px;
     height: 300px;
     border-radius: 10px;
 }
+
 .profile-content {
     margin-top: 20px;
 }
+
 .profile-content h3 {
     color: #333333;
 }
@@ -178,6 +185,7 @@ a{
 .ciao {
     color: red;
 }
+
 .profile-summary {
     margin: auto;
     width: 700px;
@@ -186,19 +194,23 @@ a{
     line-height: 30px;
     letter-spacing: 1px;
 }
+
 .empty-spacer {
     height: 500px;
 }
+
 .fold {
     margin-top: 30px;
     font-size: 40px;
-}   
+}
 
 /* reviews starts here  */
-.review-header , .tech-header{
+
+.review-header, .tech-header {
     margin-top: 50px;
     text-align: center;
 }
+
 .review-card-container {
     margin-top: 50px;
     display: flex;
@@ -212,7 +224,7 @@ a{
     font-size: 14px;
     color: #6f6f6f;
     padding: 14px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
@@ -225,7 +237,7 @@ a{
     left: 20px;
 }
 
-.reviews-card .stars{
+.reviews-card .stars {
     color: gold;
 }
 
@@ -233,51 +245,57 @@ a{
     width: 160px;
     height: 80px;
 }
+
 .upwork-img {
     width: 160px;
     height: 80px;
 }
+
 .more-review {
     margin-top: 50px;
     text-align: center;
- }
- .upwork-text {
-     color: green;
- }
- .freelancer-link {
-     color: blue;
- }
- .upwork-link {
-     color: green;
- }
+}
 
- /* reviews */
- .tech-container {
-     margin-top: 50px;
-     display: flex;
-     justify-content: space-evenly;
- }
+.upwork-text {
+    color: green;
+}
 
- .tech-card {
+.freelancer-link {
+    color: blue;
+}
+
+.upwork-link {
+    color: green;
+}
+
+/* reviews */
+
+.tech-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tech-card {
     position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
     width: 260px;
-    height: 240px;  
- }
+    height: 240px;
+}
 
- .tech-name {
-     position: absolute;
-     bottom: 20px;
-     left: 0;
-     right: 0;
- }
+.tech-name {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
 
-.larg-img{
+.larg-img {
     height: 200px;
     width: 200px;
 }
@@ -297,6 +315,7 @@ a{
 }
 
 /* footer  */
+
 footer {
     margin-top: 100px;
     padding: 50px;
@@ -315,12 +334,14 @@ footer img {
     height: 1px;
     background-color: white;
 }
+
 footer .container p {
     margin-top: 20px;
     margin-bottom: 10px;
     color: red;
     font-size: 20px;
 }
+
 .exp {
     margin-top: 20px;
     margin-bottom: 20px;
