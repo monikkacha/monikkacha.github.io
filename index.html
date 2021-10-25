@@ -16,192 +16,423 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/17cb06a272.js"></script>
     <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <title>Flexman</title>
 </head>
 
 <body>
-
-    <!-- home page starts here -->
-
-    <header class="container">
-        <div class="header-top">
-            <div class="img-container">
-                <img src="./images/brand_icon.svg" alt="brand icon" class="brand-img" />
-            </div>
-            <div class="link-container">
-                <li>Home</li>
-                <li><a href="#about_me">About Me</a></li>
-                <li><a href="#review">Reviews</a></li>
-                <li><a href="#tech">Technology</a></li>
-            </div>
-            <div class="">
-                <button class="btn-overline"><i class="fas fa-envelope"></i> <span class="spacer"></span>Mail</button>
-                <span class="spacer"></span>
-                <button class="btn-filled"><i class="fas fa-phone-alt"></i> <span class="spacer"></span>7046
-                    155302</button>
-            </div>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src="./images/brand_icon.svg" alt="Flexman" class="brand-img">
+            </a>
+            <nav
+                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-gray-900">Home</a>
+                <a class="mr-5 hover:text-gray-900">About Me</a>
+                <a class="mr-5 hover:text-gray-900">Technologies</a>
+                <a class="mr-5 hover:text-gray-900">Testimonials</a>
+            </nav>
+            <button
+                class="inline-flex items-center bg-red-500 text-white border-0 py-1 px-3 focus:outline-none hover:bg-red-400 rounded text-base mt-4 md:mt-0">
+                <i class="fas fa-phone-alt"></i> <span class="spacer"></span> 7046 155302
+            </button>
+            <span class="spacer"></span>
+            <button
+                class="inline-flex text-white items-center bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-400 rounded text-base mt-4 md:mt-0">
+                <i class="fas fa-envelope"></i> <span class="spacer"></span> monikkacha@gmail.com
+            </button>
         </div>
     </header>
 
-    <div class="container">
-        <div class="home-flex">
-            <div>
-                <div class="brand-slogan">
-                    Feel The Difference Between 99% <br> And 100% Work Satisfaction
-                </div>
-                <div class="brand-marketing">
-                    i just suggest you to look at the other proposal , 80% of them are just copy + paste ,but i take a
+
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-6 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="./images/astranaut.svg">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                    Feel The Difference Between 99% <br class="hidden lg:inline-block"> And 100% Work Satisfaction
+                </h1>
+                <p class="mb-8 leading-relaxed"> I just suggest you to look at the other proposal , 80% of them are just
+                    copy + paste ,but i take a
                     look at the job description and only bid if i have relevent skill and time to get the jobe done , i
                     am greedy and i believe that if your current client is not satisfied and you looking for some one
                     new , it is not a good business . 50% of my current work comes from my old clients , that is the
-                    proof of satisfaction and i want same from you .
-                </div>
-                <div class="work-profile-container">
-                    <span class="txt-approve">APPROVED FROM</span>
-                    <div class="freelancer-container">
-                        <div class="freelance-card">
-                            <img src="./images/freelancer.png">
-                            <span>
-                                Working on freelancer for more than 2 years and have got immense experience of Android ,
-                                Flutter and Web Development .
-                            </span>
-                            <div class="freelance-stars">
-                                4.9 <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"> </i>
-                                <i class="fas fa-star"> </i> <i class="fas fa-star"></i>
-                            </div>
-                            <a href="https://www.freelancer.com/u/monikkacha">VISIT PROFILE</a>
-                        </div>
-                        <div class="freelance-card upwork-card">
-                            <img src="./images/upwok.png" class="upwork-img">
-                            <span>
-                                After getting success with freelancer.com , thought to expand business and jump on this
-                                platform and again got awesome reviews .
-                            </span>
-                            <div class="freelance-stars">
-                                5.0 <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"> </i>
-                                <i class="fas fa-star"> </i> <i class="fas fa-star"></i>
-                            </div>
-                            <a href="https://www.upwork.com/freelancers/~017730f12ea06fd432">VISIT PROFILE</a>
-                        </div>
+                    proof of satisfaction and i want same from you .</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-6 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-red-500"> Approved From </h1>
+                <div class="flex flex-wrap">
+                    <div class="xl:w-2/4 lg:w-1/2 md:w-full px-8 py-6">
+                        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Freelancer</h2>
+                        <p class="leading-relaxed text-base mb-4">
+                            Working on freelancer for more than 2 years and have got immense experience of Android ,
+                            Flutter and Web Development.
+                        <p class="mb-2 title-font text-black">
+                            4.9 <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"> </i> <i
+                                class="fas fa-star"> </i> <i class="fas fa-star"> </i>
+                        </p>
+                        </p>
+                        <a class="text-red-500 inline-flex items-center"
+                            href="https://www.freelancer.com/u/monikkacha">View Profile
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="xl:w-2/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">UpWork</h2>
+                        <p class="leading-relaxed text-base mb-4">
+                            After getting motivated from freelancer.com , i jump on UpWork and again got awesome reviews
+                            .
+                        </p>
+                        <p class="mb-2 title-font text-black">
+                            5.0 <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"> </i> <i
+                                class="fas fa-star"> </i> <i class="fas fa-star"> </i>
+                        </p>
+                        <a class="text-red-500 inline-flex items-center"
+                            href="https://www.upwork.com/freelancers/~017730f12ea06fd432">View Profile
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="">
-                <img src="./images/astranaut.svg" alt="astranaut" class="astronaut-img" />
+    </section>
+    <section class="text-gray-600 body-font">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-red-500 text-center"> About Me </h1>
+        <div class="container px-5 py-6 flex flex-wrap">
+            <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-3/4 sm:w-2/3 content-start sm:pr-10">
+                <div class="w-full sm:p-4 px-4 mb-6">
+                    <h1 class="title-font font-medium text-xl mb-2 text-gray-900">2.5+ Year Professional Experience</h1>
+                    <div class="leading-relaxed">i am <span class="text-red-500">Monik Kacha</span> and from the college time working on all kind of
+                        projects , ranging from simple web app to machine learning and AI Based projects . after
+                        completing the college , start working as a professional mobile developer and apart from mobile
+                        development have experties in major web development framework and also like to play with UI /
+                        UX. </div>
+                </div>
+                <div class="p-4 sm:w-1/2 lg:w-1/3 w-1/2">
+                    <h2 class="title-font font-medium text-3xl text-gray-900">100K+</h2>
+                    <p class="leading-relaxed text-red-500">Downloads</p>
+                </div>
+                <div class="p-4 sm:w-1/2 lg:w-1/3 w-1/2">
+                    <h2 class="title-font font-medium text-3xl text-gray-900">18 </h2>
+                    <p class="leading-relaxed text-red-500">Clients</p>
+                </div>
+                <div class="p-4 sm:w-1/2 lg:w-1/3 w-1/2">
+                    <h2 class="title-font font-medium text-3xl text-gray-900">29 </h2>
+                    <p class="leading-relaxed text-red-500">Projects</p>
+                </div>
             </div>
+            <div class="lg:w-1/4 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0 object-center">
+                <img class="object-cover mx-auto profile-img" src="./images/profile 1.png" alt="stats">
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-6 mx-auto">
+
+            <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 mt-20 text-red-500">Technologies</h1>
+                <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Working as a individual developer and desinger
+                    on below tech</p>
+            </div>
+
+            <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                            A
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Android</h2>
+                        <p class="leading-relaxed text-base">Working for more than 3 years and can do code with any
+                            strucutre or language</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                            F
+                            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Flutter</h2>
+                        <p class="leading-relaxed text-base">Working from flutter when it was in beta , good experience
+                            isn't it</p>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                            F
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Firebase</h2>
+                        <p class="leading-relaxed text-base">Firebase has been quite use full in React , Android &
+                            Flutter in last 3 years</p>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                            R
+                            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">React</h2>
+                        <p class="leading-relaxed text-base">React is my personal favourite framework and when it comes
+                            to web app</p>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                            N
+                            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Node.JS</h2>
+                        <p class="leading-relaxed text-base">I am sure that you can not forget about node.js when you
+                            think about socket</p>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                            E
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Express.JS</h2>
+                        <p class="leading-relaxed text-base">Working on node.js and don't use Express.JS , Impossible !
+                        </p>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                            M
+                            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">MongoDB</h2>
+                        <p class="leading-relaxed text-base">You were right , yes i am MERN Stack developer</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                            N
+                            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Figma</h2>
+                        <p class="leading-relaxed text-base">Taking baby steps with UI / UX Design on Figma</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                            A
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Express.JS</h2>
+                        <p class="leading-relaxed text-base">Gave second thought to learn adobe , when i am jumping in
+                            UI / UX.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- how i work -->
+
+    <section class="text-gray-600 body-font">
+
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-red-500 text-center mb-20">How i work ?
+            </h1>
+            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <div
+                    class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                </div>
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Before Making A Deal</h2>
+                    <p class="leading-relaxed text-base">I Want To Make Sure That , I Have Understood Your Requirement
+                        And We Don't Have Confusion , Even You Can See Questions In My Proposal . My Experience Says
+                        Just Trying To Making A Deal Without Proper Understanding Is Bad Deal . </p>
+                </div>
+            </div>
+            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">During Working On Your Project</h2>
+                    <p class="leading-relaxed text-base">I Like To Be In Touch With Client If Needed , Because I Can
+                        Give Them Regular Updates About The Project Or Can Give Him Information About Future Obstacle Or
+                        Deadline Delay </p>
+                </div>
+                <div
+                    class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <circle cx="6" cy="6" r="3"></circle>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+                <div
+                    class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Testing & Deployment</h2>
+                    <p class="leading-relaxed text-base"> We Will Keep Testing The Product And Will Keep Changing As Per
+                        Your Requirment , I Will Be With You Even After Deploying Your Product .</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="text-3xl font-medium title-font text-red-500 mb-12 text-center">Testimonials</h1>
+            <div class="flex flex-wrap -m-4">
+
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-red-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">
+                            Again what a pleasure working with this freelancer. He is professional and understands the
+                            requirements put to him. He knows his skills and brings our ideas to full life. I will
+                            definitely use him again in the future and will recommend him to other businesses too.
+                        </p>
+                        <a class="inline-flex items-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Eduard S</span>
+                                <span class="text-red-500 text-sm">Freelancer</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-red-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">
+                            Really Expert Freelancer, completed work within under pressure deadline with really
+                            impressive design, I will hire him again for such a work, best of luck buddy Thanks You So
+                            Much <br><br><br>
+                        </p>
+                        <a class="inline-flex items-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Shailesh</span>
+                                <span class="text-red-500 text-sm">UpWork</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex flex-wrap -m-4">
+
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-red-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">
+                            He responses within commited time and thats huge where time is money. good humble person.
+                            recommended for repeate hire. <br><br><br>
+                        </p>
+                        <a class="inline-flex items-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Ilesh S</span>
+                                <span class="text-red-500 text-sm">Freelancer</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-red-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">
+                            What a pleasure working with this freelancer, understood the requirement and completed tasks
+                            professionally. Will use him definitely again. <br><br>
+                        </p>
+                        <a class="inline-flex items-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Eduard S</span>
+                                <span class="text-red-500 text-sm">UpWork</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-1xl font-medium title-font text-grey-500 mt-12 text-center">You can find more reviews at my
+                profile on UpWork and Freelancer</h1>
+        </div>
+    </section>
+
+    <div class="bg-gray-100">
+        <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+               <img src="./images/brand_icon.svg" alt="Flexman">
+            </a>
+            <p class="text-sm text-gray-700 sm:ml-6 sm:mt-0 mt-4 ml-auto">
+                Well , Let's get on the table and take a decision <span class="text-red-500"> Let's Initiate Chat</span>
+            </p>
         </div>
     </div>
-
-    <!-- home page ends here-->
-
-    <!-- about me page starts here -->
-    <div class="container">
-        <div class="profile-container" id="about_me">
-            <div class="profile-header">
-                About Me
-            </div>
-            <img src="./images/profile.png" alt="profile image" class="profile-img">
-            <div class="profile-content">
-                <h3>Monik Kacha</h3>
-                <p class="exp">2.5+ year professional experience</p>
-                <p class="profile-summary"><span class="ciao">Ciao</span> , i am monik and from the college time working on all kind<br> of projects , ranging from simple web app to machine learning and AI Based projects . after completing the college , start working as a professional mobile developer and apart from mobile development have experties in major web development framework and also like to play with UI / UX. i have plan to start my own firm and that is what you can <br>see on this page <span class="ciao">FLEXMAN</span></p>
-                <p class="fold">🙏️</p>
-            </div>
-        </div>
-    </div>
-    <!-- about me page ends here -->
-
-    <!-- reviews starts here -->
-    <div class="container" id="review">
-        <div class="review-header">
-            <h1>Reviews</h1> 
-        </div>
-        <div class="review-card-container">
-            <div class="reviews-card">
-                <img src="./images/freelancer.png" class="freelancer-img"/>
-                <p>Again what a pleasure working with this freelancer. He is professional and understands the requirements put to him. He knows his skills and brings our ideas to full life. I will definitely use him again in the future and will recommend him to other businesses too.</p>
-                <p class="star-container">5.0 <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i></span></p>
-            </div>
-            <div class="reviews-card">
-                <img src="./images/upwok.png" class="upwork-img"/>
-                <p>Really Expert Freelancer, completed work within under pressure deadline with really impressive design. take initiative him self .  I will hire him again for such a work, best of luck buddy </p>
-                <p class="star-container">5.0 <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i></span></p>
-            </div>
-            <div class="reviews-card">
-                <img src="./images/freelancer.png" class="freelancer-img"/>
-                <p>Monik always responses within commited time and thats huge where time is money. provided project under the time , good humble person. recommended for repeate hire.</p>
-                <p class="star-container">5.0 <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i></span></p>
-            </div>
-            
-        </div>
-        <div class="more-review">
-            You Can Find More Reviews At
-                <p> <a href="https://www.freelancer.com/u/monikkacha" class="freelancer-link">Freelancer</a> | <a href="https://www.upwork.com/freelancers/~017730f12ea06fd432" class="upwork-link">UpWork</a> </p>
-        </div>
-    </div>
-    <!-- reviews ends here -->
-
-    <div class="container" id="tech">
-        <div class="tech-header">
-            <h1>Technologies</h1> 
-        </div>
-        <div class="tech-container">
-            <div class="tech-card">
-                <img src="./images/android.png"/>
-                <p class="tech-name">Android</p>
-            </div>
-            <div class="tech-card">
-                <img src="./images/flutter.png"/>
-                <p class="tech-name">Flutter</p>
-            </div>
-            <div class="tech-card">
-                <img src="./images/firebase.png"/>
-                <p class="tech-name">Firebase</p>
-            </div>
-        </div>
-        <div class="tech-container">
-            <div class="tech-card">
-                <img src="./images/react.png" class="larg-img"/>
-                <p class="tech-name">React</p>
-            </div>
-            <div class="tech-card">
-                <img src="./images/node.png" class="larg-img"/>
-                <p class="tech-name">Node.Js</p>
-            </div>
-            <div class="tech-card">
-                <img src="./images/express.png" class="larg-img"/>
-                <p class="tech-name">Express.Js</p>
-            </div>
-            <div class="tech-card">
-                <img src="./images/mongo.png" class="larg-img"/>
-                <p class="tech-name">Mongo DB</p>
-            </div>
-        </div>
-        <div class="tech-container">
-            <div class="tech-card">
-                <img src="./images/figma.png" class="larg-img"/>
-                <p class="tech-name">Figma</p>
-            </div>
-            <div class="tech-card">
-                <img src="./images/adobe.png" class="larg-img"/>
-                <p class="tech-name">Adobe</p>
-            </div>
-        </div>
-        <div class="notice">
-            NOTE : <br> I HAVE SKILLS ON ALL ABOVE TECHNOLOGIES , I DIRECTLY WORK ON THEM IF WE AGREE FOR THE PROJECT , NO OTHER DEVELOPER WILL BE INCLUDED . YOU WILL BE DIRECTLY DISCUSSING WITH ME FOR ABOVE TECH .
-        </div>
-    </div>
-
-    <footer>
-        <div class="container">
-            <img src="./images/flexman white.svg" />
-            <div class="divider"></div>
-            <div>
-                <i class="fas fa-envelope"></i> <span class="spacer"></span> monikkacha@gmail.com         <span class="spacer"></span><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span>   <i class="fas fa-phone-alt"></i> <span class="spacer"></span>7046 155302
-            </div>
-            <!-- <p class="chat">Let's start the Chat</p> -->
-        </div>
-    </footer>
 
 </body>
 

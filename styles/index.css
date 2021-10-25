@@ -8,6 +8,7 @@ body {
 }
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 .container {
@@ -162,10 +163,10 @@ a{
     font-weight: bold;
 }
 
-.profile-container img {
-    width: 260px;
-    height: 260px;
-    border-radius: 1000px;
+.profile-container img , .profile-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
 }
 .profile-content {
     margin-top: 20px;
