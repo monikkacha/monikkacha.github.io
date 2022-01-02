@@ -4,6 +4,7 @@
 }
 
 body {
+    font-family: 'Bebas Neue', cursive;
     font-family: 'Poppins';
     box-sizing: border-box;
 }
@@ -166,6 +167,17 @@ a {
     margin-bottom: 50px;
     font-size: 32px;
     font-weight: bold;
+}
+
+.head-line-slogan {
+    font-family: 'Bebas Neue';
+    font-size: 56px;
+    /* color: #1CC6DF; */
+    color: black;
+}
+
+.head-line-highlight {
+    color: red;
 }
 
 .profile-container img, .profile-img {
